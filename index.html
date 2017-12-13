@@ -1,39 +1,248 @@
+<!DOCTYPE html>
 <html>
-  <head>
-    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,height=device-height, user-scalable=no,initial-scale=1, minimum-scale=1, maximum-scale=1"/>
+	<meta name="format-detection" content="telphone=no, email=no"/> 
+	<meta name="author" contect="mrooze, mrooze@v-hiker.cn" />
+	<meta name="description" content="v-hiker.cn,Mrooze的个人网站,分享生活，学习，就业，成长！"/>
+	<meta name="keywords" content="Mrooze,个人网站，website,v-hiker.cn,微信小程序,Javascript,css3,css,html,html5,nodejs,node,web开发,前端,v-hiker,hiker,Vhiker,vhiker,mrooze@v-hiker.cn,react,react-native,facebook,google,Google,miniapp,wechat,官网,安卓,Ios,ios,APP,App,app"/>
+	<meta name="robots" content="index,follow"/>
+	<meta http-equiv="Cache-Control" content="no-siteapp" />
+	<meta name="HandheldFriendly" content="true"/>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+	<meta name="MobileOptimized" content="320">
+	<meta name="screen-orientation" content="portrait">
+	<meta name="full-screen" content="yes">
+	<meta name="x5-fullscreen" content="true">
+	<meta name="browsermode" content="application">
+	<meta name="x5-page-mode" content="app">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="baidu-site-verification" content="WZmV0DNPIH" />
+	<meta name="google-site-verification" content="rtNJXsxCiuUMrHFemrN_WnycR_7TLXs4Ju-1lj5mngY" />
+	<title>V-hiker.cn|mrooze的个人网站</title>
+	<!-- <link rel="stylesheet" href="./styles/style.css"> -->
+	<style>
+		/*
+* @Author: Mrooz
+* @Date:   2017-10-30 23:08:01
+* @Last Modified by:   Mrooz
+* @Last Modified time: 2017-10-31 00:34:25
+*/
+::-webkit-scrollbar {  
+  width: 0;  
+  height: 0;  
+}  
   
-    <title>v-hiker.cn</title>
-    <style type="text/css" media="screen">
-      body{
-        position:relative;
-      }
-       #heading {
-        text-align:center;
-      }
-      p {
-        text-align:center;
-      }
-      footer {
-        position:fixed;
-        bottom:20px;
-        width:100%;
-        text-align:center;
-      }
-    </style>
-  </head>
-  <body>
-    <h1 id="heading">Welcome to v-hiker.cn </h1>
-    <p> A website of Mrooze</p>
-    <fieldset id='project'>
-      <legend>|  Project I participated  |</legend>
-      <ul>
-        <li><a href='https://source.v-hiker.cn/qeelink'>智能家居网站</a></li>
-        <li><a href='https://source.v-hiker.cn/onemenu'>境外点餐应用</a></li>
-      </ul>
-    </fieldset>
-    <footer>
-      <p>github:<a href='https://github.com/Mrooze-zeng'>Mrooze-zeng</a></p>
-      <p>ICP主体备案号:粤ICP备17043808号</p>
-    </footer>
-  </body>
+::-webkit-scrollbar-track,  
+::-webkit-scrollbar-thumb {   
+  border: none;  
+}  
+  
+::-webkit-scrollbar-track {  
+  box-shadow: 0 0 0 rgba(0,0,0,.2) inset;  
+}  
+  
+::-webkit-scrollbar-thumb {  
+  min-height: 0;  
+  background-clip: content-box;  
+  box-shadow: 0 0 0 0 rgba(0,0,0,.2) inset;  
+}  
+  
+::-webkit-scrollbar-corner {  
+  background: transparent;  
+}  
+html,body,section {
+	height:100%;
+	margin: 0;
+	padding: 0;
+	background: #fff;
+	text-align: center;
+	position: relative;
+	box-sizing: border-box;
+	overflow-y: scroll;
+}
+h1,h2,h3,h4,p,div {
+	margin: 0;
+	padding: 0;
+}
+section {
+	border-bottom: 0.1rem solid #ececec;
+}
+nav {
+	width: 100%;
+	position: relative;
+	z-index: 9999;
+}
+nav>ul {
+	padding: 1rem;
+	float: right;	
+}
+nav a {
+	color: #aaa;
+}
+nav>ul>li {
+	list-style-type: none;
+	display: inline-block;
+	margin: 0 1rem;
+}
+.heading {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+}
+.detail {
+	font-size: 0.45rem;
+}
+h1 {
+	font: 3.5rem 'Italiana', sans-serif;
+	text-align: center;
+	margin-top: 12rem;
+}
+.myWorks {
+	padding: 2rem;
+}
+h2 {
+	text-align: left;
+}
+h3 {
+	text-align: left;
+	padding-top: 0.2rem;
+	padding-bottom: 0.2rem;
+}
+.worksList>li,.info_list>li {
+	list-style-type: none;
+}
+.worksList a,.info a {
+	text-decoration: none;
+	color: #666;
+}
+.worksList p,.info p {
+	font-size: 0.75rem;
+	text-indent: 2rem;
+	text-align: left;
+	font-style: italic;
+}
+.worksList .link,.info .link {
+	font-size: 0.65rem;
+	text-align: left;
+	padding: 0.45rem;
+	text-decoration: underline;
+	text-underline-position: under;
+}
+.info {
+	padding: 2rem;
+}
+.footer {
+	width: 100%;
+	bottom: 2rem;
+	font-size: 0.65rem;
+	position: absolute;
+	color: #bbb;
+}
+strong {
+	font-weight: initial;
+}
+	</style>
+	<script>
+		(function(){
+		    var bp = document.createElement('script');
+		    var curProtocol = window.location.protocol.split(':')[0];
+		    if (curProtocol === 'https') {
+		        bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';        
+		    }
+		    else {
+		        bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+		    }
+		    var s = document.getElementsByTagName("script")[0];
+		    s.parentNode.insertBefore(bp, s);
+		})();
+	</script>	
+	<script>
+		var _hmt = _hmt || [];
+		(function() {
+		  var hm = document.createElement("script");
+		  hm.src = "https://hm.baidu.com/hm.js?1689233c7eabb0105162ed925554064c";
+		  var s = document.getElementsByTagName("script")[0]; 
+		  s.parentNode.insertBefore(hm, s);
+		})();
+	</script>
+</head>
+<body>
+	<section id="first">
+		<nav>
+			<ul class="nav">
+				<li><a href="#first">主页</a></li>
+				<li><a href="#second">作品集</a></li>
+				<li><a href="#third">个人信息</a></li>
+			</ul>
+		</nav>
+		<div class="heading">
+			<h1><strong>V-hiker.cn</strong></h1>
+			<p><i>一个属于Mrooze的网站</i><i class="detail">-----------基于nodejs,nginx,ubuntu</i></p>
+		</div>
+	</section>
+	<section id="second">
+		<div class="myWorks">
+			<h2>作品集</h2>
+			<ul class="worksList">
+				<li>
+					<a href="https://source.v-hiker.cn/qeelink/" title='智能家居网站'>
+						<h3>智能家居网站</h3>
+						<p>一个采用React框架开发的智能家居官网。</p>
+						<p class="link">https://source.v-hiker.cn/qeelink</p>
+					</a>
+				</li>
+				<li>
+					<a href="https://source.v-hiker.cn/onemenu/" title='境外点餐应用'>
+						<h3>境外点餐应用</h3>
+						<p>一个应用于美国市场的webapp,使用需要连接Google服务，主要采用React框架开发。</p>
+						<p class="link">https://source.v-hiker.cn/onemenu</p>
+					</a>
+				</li>
+				<li>
+					<a href="http://chat.v-hiker.cn/" title='websocket群聊web'>
+						<h3>websocket群聊web</h3>
+						<p>一个采用Socket.io开发的非社交群聊网站，应用React框架，antd-mobile UI。</p>
+						<p class="link">http://chat.v-hiker.cn</p>
+					</a>
+				</li>
+				<li>
+					<a href="https://source.v-hiker.cn/wechat/" title='微信小程序'>
+						<h3>微信小程序</h3>
+						<p>一个静态的微信小程序，未添加接口，未来会添加上的。</p>
+						<p class="link">https://source.v-hiker.cn/wechat</p>
+					</a>
+				</li>
+				<li>
+					<a href="https://source.v-hiker.cn/demo/demo.zip" title='Demo'>
+						<h3>Demo</h3>
+						<p>一个简单的关联select Demo,采用原生Js。</p>
+						<p class="link">https://source.v-hiker.cn/demo/demo.zip</p>
+					</a>
+				</li>
+			</ul>
+		</div>
+	</section>
+	<section id="third">
+		<div class="info">
+			<h2>个人信息</h2>
+			<ul class="info_list">
+				<li><a href="https://resume.v-hiker.cn/" title='个人简历'>
+					<h3>个人简历：</h3>
+					<p class="link">https://resume.v-hiker.cn</p>
+				</a></li>
+				<li><a href="https://github.com/Mrooze-zeng" title='Github'>
+					<h3>Github:</h3>
+					<p class="link">https://github.com/Mrooze-zeng</p>
+				</a></li>
+			</ul>
+		</div>
+		<div class="footer">
+			<h4>© Copyright 2017 Mrooze</h4>
+			<br>
+			<p>ICP主体备案号:粤ICP备17043808号</p>
+		</div>
+	</section>
+</body>
 </html>
